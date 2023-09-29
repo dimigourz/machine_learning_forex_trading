@@ -44,10 +44,9 @@ from forex_data import ForexData
 from forex_model import ForexModel
 
 # Example usage:
-api_token = 'd79599fabfc6c2091a4090a522c48d1b-4eb15068f75fa61dbbe8cab8a00dcd75'
-api_token = '37c8a10610c3db7afb9b3153a83b2998-a3bec539452b400b95a0133422f322ac'
+api_token = 'your-token'
 
-account_id = '101-004-18285738-002'
+account_id = 'your-account_id'
 
 oanda_api = OandaAPI(api_token, account_id)
 
