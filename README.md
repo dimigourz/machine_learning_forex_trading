@@ -18,6 +18,17 @@ The core of this bot lies in its utilization of the LightGBM algorithm. By analy
 - **Data-Driven Decision Making with LightGBM**: Mines historical Forex data to generate trading signals for buy/sell decisions.
 - **Automated Trading Dynamics**: Removes the manual labor from trading by automating order placements and trade exits based on predictive outputs.
 
+## File Descriptions
+
+- **features.py**: Handles feature engineering and manipulation for forex data. Contains utilities for creating or transforming features for our predictive model.
+
+- **forex_data.py**: Responsible for fetching, processing, or storing forex-related data. It contains tools to fetch real-time or historical data and preprocess the data for model consumption.
+
+- **forex_model.py**: Holds the machine learning logic, primarily the LGBM algorithm, for predicting forex market movements.
+
+- **oanda_api.py**: Interfaces directly with the OANDA trading platform. It deals with authentication, executing orders, and fetching account details.
+
+- **wegolive.py**: Deploys or runs the trading bot in real-time. It contains the primary trading loop, decision logic, and alert mechanisms.
 
 ## Configuration & Setup
 
@@ -30,12 +41,12 @@ The core of this bot lies in its utilization of the LightGBM algorithm. By analy
 
 ## Expansion & Future Work
 
-This bot is designed as a foundational tool, aimed at giving traders a starting point for algorithmic trading on OANDA's platform. While the bot incorporates a basic LGBM-based strategy, its framework is adaptable, allowing for easy integrations and modifications.
+I designed this bot as a learning project, focusing on algorithmic trading on OANDA's platform. While the bot utilizes a basic LGBM-based strategy, its architecture is flexible, making it suitable for further expansions and customizations.
 
 **Here's what we can do next:**
 
 - **Custom Strategies**: Dive into the codebase and add your unique trading strategies. Whether it's based on machine learning models, technical indicators, or other methodologies, the bot is designed to be flexible.
   
-- **Additional Features**: Consider integrating features like risk management tools, dynamic stop-loss settings, or even diversifying to trade on multiple currency pairs simultaneously.
+- **Additional Features**: Consider integrating features like risk management tools or dynamic stop-loss settings.
 
 - **Performance Monitoring**: Implement tracking metrics and logging mechanisms to closely monitor your bot's trading performance over time.
